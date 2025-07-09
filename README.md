@@ -7,7 +7,7 @@ Last updated on 09-07-2025.
 ## 🗂 Structure
 
 ```
-assets/         → cv.pdf (your resume) and other downloads
+assets/   → cv.pdf (your resume), profile picture and other downloads
 
 index.html → all pages
 app.js
