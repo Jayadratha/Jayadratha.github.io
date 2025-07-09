@@ -288,20 +288,20 @@ function formatTime(timestamp) {
 // Google Analytics Integration (Mock)
 function initializeAnalytics() {
     // Mock Google Analytics - in real implementation, include GA4 code
-    console.log('Analytics initialized');
+    console.log('Real Google Analytics tracking is active.');
     
     // Track initial page load
-    gtag('config', 'GA_MEASUREMENT_ID', {
+    gtag('config', 'G-VJ7QVCW24B', {
         page_title: 'Jayadratha Gayen - AI Researcher',
         page_location: window.location.href
     });
 }
 
-// Mock gtag function for demonstration
-function gtag() {
-    // Mock implementation - in real site, this would be Google Analytics
-    console.log('Analytics event:', arguments);
-}
+// // Mock gtag function for demonstration
+// function gtag() {
+//     // Mock implementation - in real site, this would be Google Analytics
+//     console.log('Analytics event:', arguments);
+// }
 
 // Utility Functions
 function debounce(func, wait) {
