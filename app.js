@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize Google Analytics (mock implementation)
     initializeAnalytics();
+
+    // Initialize theme detection
+    initializeTheme();
 });
 
 // Navigation System
@@ -433,14 +436,34 @@ document.addEventListener('keydown', function(e) {
 });
 
 // Initialize theme detection
-function initializeTheme() {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-color-scheme', prefersDark ? 'dark' : 'light');
+// function initializeTheme() {
+//     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+//     document.documentElement.setAttribute('data-color-scheme', prefersDark ? 'dark' : 'light');
     
-    // Listen for theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-        document.documentElement.setAttribute('data-color-scheme', e.matches ? 'dark' : 'light');
-    });
+//     // Listen for theme changes
+//     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+//         document.documentElement.setAttribute('data-color-scheme', e.matches ? 'dark' : 'light');
+//     });
+// }
+function initializeTheme() {
+    const themeSwitcher = document.getElementById('theme-switcher');
+    const userPreference = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    let currentTheme = userPreference || (prefersDark ? 'dark' : 'light');
+    
+    document.documentElement.setAttribute('data-color-scheme', currentTheme);
+    localStorage.setItem('theme', currentTheme);
+
+    themeSwitcher.addEventListener('click', toggleTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-color-scheme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-color-scheme', newTheme);
+    localStorage.setItem('theme', newTheme);
 }
 
 // Initialize theme on load

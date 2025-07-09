@@ -1446,3 +1446,69 @@ select.form-control {
     page-break-after: auto;
   }
 }
+
+/* Theme Switcher Button */
+.nav-controls {
+  position: absolute;
+  top: 50%;
+  right: var(--space-24);
+  transform: translateY(-50%);
+}
+
+.theme-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-btn-primary-text);
+  border: none;
+  border-radius: var(--radius-full);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+  font-size: var(--font-size-lg);
+  padding: 0;
+}
+
+.theme-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.theme-btn .fa-sun {
+  display: none;
+}
+
+.theme-btn .fa-moon {
+  display: block;
+}
+
+/* Icon visibility in dark mode */
+[data-color-scheme="dark"] .theme-btn .fa-sun {
+  display: block;
+}
+
+[data-color-scheme="dark"] .theme-btn .fa-moon {
+  display: none;
+}
+
+/* Responsive adjustments for the theme button */
+@media (max-width: 768px) {
+  .nav-controls {
+    position: static;
+    transform: none;
+    order: -1; /* Move button above the nav links on mobile */
+  }
+
+  .nav-container {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
