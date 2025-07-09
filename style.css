@@ -738,6 +738,16 @@ select.form-control {
   margin-bottom: var(--space-16);
 }
 
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
 .profile-placeholder {
   width: 150px;
   height: 150px;
