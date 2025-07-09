@@ -1,103 +1,351 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayadratha Gayen - AI Researcher</title>
-    <meta name="description" content="Jayadratha Gayen is an AI researcher at IIIT Hyderabad specializing in Graph Neural Networks and uncertainty management.">
-    <meta name="keywords" content="Jayadratha Gayen, AI researcher, Graph Neural Networks, Machine Learning, IIIT Hyderabad">
-    <meta name="author" content="Jayadratha Gayen">
-
-    <!-- Open Graph / Twitter -->
-    <meta property="og:title" content="Jayadratha Gayen - AI Researcher">
-    <meta property="og:description" content="Graph Neural Network & Temporal Graph Learning Researcher at IIIT Hyderabad">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jayadratha-gayen.github.io/">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-
-    <!-- Google Analytics -->
-    <!-- Replace GA_MEASUREMENT_ID with your real ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" aria-label="Toggle dark mode" title="Switch to dark mode" class="theme-toggle">
-        <span class="icon sun">☀️</span>
-        <span class="icon moon">🌙</span>
-    </button>
+    <!-- Navigation Header -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Jayadratha Gayen</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#teaching" class="nav-link">Teaching</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Hidden Admin Analytics Panel -->
-    <div id="admin-panel" class="admin-panel" style="display:none">
-      <div class="admin-header"><h3>Analytics</h3><button id="close-admin" class="close-btn">×</button></div>
-      <div class="admin-content">
-        <div class="stat-card"><h4>Total Visitors</h4><span id="total-visitors">0</span></div>
-        <div class="stat-card"><h4>Today's Visitors</h4><span id="today-visitors">0</span></div>
-        <div class="stat-card"><h4>Online Now</h4><span id="current-online">0</span></div>
-        <div class="recent-visits"><h4>Recent Visits</h4><div id="recent-visits-list"></div></div>
-      </div>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h3>Jayadratha Gayen</h3>
+                <p class="title">Research Fellow</p>
+                <p class="institution">Machine Learning Lab<br>IIIT Hyderabad</p>
+            </div>
+
+            <div class="contact-section">
+                <h4>Contact</h4>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jayadratha.gayen@research.iiit.ac.in">jayadratha.gayen@research.iiit.ac.in</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hyderabad, India</span>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h4>Links</h4>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/jayadratha-gayen" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/jayadratha-gayen" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=jayadratha" target="_blank" class="social-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Google Scholar</span>
+                    </a>
+                    <a href="https://openreview.net/profile?id=~Jayadratha_Gayen1" target="_blank" class="social-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>OpenReview</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="content-section active">
+                <div class="section-header">
+                    <h1>About</h1>
+                </div>
+                
+                <div class="intro-content">
+                    <p>I am a Research Fellow at the Machine Learning Lab, IIIT Hyderabad, working on cutting-edge research in artificial intelligence and machine learning. My research focuses on Graph Neural Networks (GNNs), particularly in the context of dynamic graphs, uncertainty management, and high-stakes applications.</p>
+                    
+                    <p>Currently, I am pursuing my M.Sc in Electronics and Communication Engineering by Research at IIIT Hyderabad, where I explore novel approaches to temporal graph learning, reject option classification, and 3D computer vision applications.</p>
+                </div>
+
+                <div class="research-interests">
+                    <h3>Research Interests</h3>
+                    <div class="interests-grid">
+                        <span class="interest-tag">Graph representation learning</span>
+                        <span class="interest-tag">Graph neural networks</span>
+                        <span class="interest-tag">Geometric deep learning</span>
+                        <span class="interest-tag">Temporal graph networks</span>
+                        <span class="interest-tag">Knowledge graphs</span>
+                        <span class="interest-tag">Molecular property prediction</span>
+                        <span class="interest-tag">Molecular generation</span>
+                        <span class="interest-tag">Uncertainty optimization</span>
+                        <span class="interest-tag">Explainable AI</span>
+                    </div>
+                </div>
+
+                <div class="news-section">
+                    <h3>Recent News</h3>
+                    <div class="news-item">
+                        <span class="news-date">June 2025</span>
+                        <span class="news-content">Started Google Summer of Code project on DevoTG: Dynamic Graph Neural Networks for Modeling C. elegans Development</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">May 2025</span>
+                        <span class="news-content">Paper "Reducing Misclassification Risk in Dynamic Graph Neural Networks through Abstention" accepted at ASONAM 2025</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">April 2025</span>
+                        <span class="news-content">Paper "Node Classification With Reject Option" accepted at TMLR 2025</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section id="publications" class="content-section">
+                <div class="section-header">
+                    <h1>Publications</h1>
+                </div>
+                
+                <div class="publications-list">
+                    <div class="year-group">
+                        <h3>2025</h3>
+                        <div class="publication-item">
+                            <h4>Reducing Misclassification Risk in Dynamic Graph Neural Networks through Abstention</h4>
+                            <p class="authors">Jayadratha Gayen, Himanshu Pal, Naresh Manwani, Charu Sharma</p>
+                            <p class="venue">ASONAM 2025 <span class="status status--success">Accepted</span></p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2501.08397" target="_blank" class="paper-link">ArXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <h4>Confidence First: Reliability-Driven Temporal Graph Neural Networks</h4>
+                            <p class="authors">Jayadratha Gayen, Himanshu Pal, Naresh Manwani, Charu Sharma</p>
+                            <p class="venue">KDD 2025 Temporal Graph Learning (TGL) Workshop <span class="status status--success">Accepted</span></p>
+                            <div class="paper-links">
+                                <a href="#" class="paper-link">OpenReview</a>
+                                <a href="#" class="paper-link">ArXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <h4>Node Classification With Reject Option</h4>
+                            <p class="authors">Uday Bhaskar, Jayadratha Gayen, Charu Sharma, Naresh Manwani</p>
+                            <p class="venue">TMLR 2025 <span class="status status--success">Accepted</span></p>
+                            <div class="paper-links">
+                                <a href="#" class="paper-link">Paper</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <h4>Node Classification With Integrated Reject Option For Legal Judgement Prediction</h4>
+                            <p class="authors">Uday Bhaskar, Jayadratha Gayen, Charu Sharma, Naresh Manwani</p>
+                            <p class="venue">AAAI 2025 Deployable AI (DAI) Workshop <span class="status status--success">Accepted</span></p>
+                            <div class="paper-links">
+                                <a href="#" class="paper-link">Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="section-header">
+                    <h1>Projects</h1>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-year">2024</div>
+                        <h4>Node Classification With Integrated Reject Option</h4>
+                        <p>Introduced NodeCwR framework incorporating cost-based and coverage-based rejection strategies. Achieved 6-19% improvement in prediction accuracy on ILDC dataset for Legal Judgment Prediction.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-year">2024</div>
+                        <h4>Predict Confidently, Predict Right: Abstention in Dynamic Graph Learning</h4>
+                        <p>Developed novel reject option strategy for CTDGs allowing model abstention from uncertain predictions. Achieved 10-15% improvement in AUC/AP scores across six dynamic graph datasets.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-year">2023</div>
+                        <h4>3D Motion Transfer Across Diverse Character Topologies</h4>
+                        <p>Developed method using Graph Convolution Networks for realistic 3D motion transfer between diverse character topologies. Incorporated prior frame encodings to reduce jitter.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-year">2022</div>
+                        <h4>Multilingual News Article Similarity Detection Using Siamese Networks</h4>
+                        <p>Developed multilingual news similarity detection system. Achieved best result with multilingual DistilBERT (PCC: 0.5683) in SemEval 2022 Task 8.</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <div class="section-header">
+                    <h1>Experience</h1>
+                </div>
+                
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-date">Nov 2022 - Present</div>
+                        <div class="experience-content">
+                            <h4>Research Fellow</h4>
+                            <p class="organization">Machine Learning Lab - MLL (IIITH), Hyderabad, India</p>
+                            <p>Conducted research on GNNs, high-stakes applications like legal judgment prediction, disease prediction. Explored continuous time dynamic graphs (CTDGs), reject option classification. Worked on 3D computer vision applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">May 2025 - Present</div>
+                        <div class="experience-content">
+                            <h4>Software Developer</h4>
+                            <p class="organization">Google Summer of Code, Remote</p>
+                            <p>Project: DevoTG: Dynamic Graph Neural Networks for Modeling C. elegans Development. Model C. elegans embryogenesis and connectome formation using advanced temporal graph methods.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">July 2018 - Dec 2019</div>
+                        <div class="experience-content">
+                            <h4>Engineer</h4>
+                            <p class="organization">Vikram Solar Limited, Falta, West Bengal, India</p>
+                            <p>Contributed to Six Sigma project increasing production by 10%. Involved in bottleneck analysis, DOE in Minitab, and optimization analyses. Led KAIZEN projects achieving 2% reduction in power consumption.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teaching Section -->
+            <section id="teaching" class="content-section">
+                <div class="section-header">
+                    <h1>Teaching</h1>
+                </div>
+                
+                <div class="teaching-list">
+                    <div class="teaching-item">
+                        <div class="teaching-date">May 2023</div>
+                        <div class="teaching-content">
+                            <h4>Teaching Assistant - 3D Vision Summer School</h4>
+                            <p class="organization">CVIT, IIIT Hyderabad</p>
+                            <p>Conducted tutorial on graph neural networks and their applications in 3D vision, especially mesh-based systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="teaching-item">
+                        <div class="teaching-date">October 2023</div>
+                        <div class="teaching-content">
+                            <h4>Instructor - Executive Training Program on AIML</h4>
+                            <p class="organization">ihub-data, IIIT Hyderabad</p>
+                            <p>Coordinated two-week executive training program. Conducted tutorials on PCA and end-to-end ML model building.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CV Section -->
+            <section id="cv" class="content-section">
+                <div class="section-header">
+                    <h1>Curriculum Vitae</h1>
+                </div>
+                
+                <div class="cv-content">
+                    <p>Download my complete CV to learn more about my academic background, research experience, and technical skills.</p>
+                    
+                    <div class="cv-download">
+                        <a href="#" class="btn btn--primary cv-btn">
+                            <i class="fas fa-download"></i>
+                            Download CV (PDF)
+                        </a>
+                    </div>
+
+                    <div class="cv-summary">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>M.Sc in Electronics and Communication Engineering by Research</h4>
+                            <p>International Institute of Information Technology, Hyderabad</p>
+                            <p>July 2022 - July 2025 | GPA: 8.29/10</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <h4>Bachelor of Technology in Electrical Engineering</h4>
+                            <p>Indian Institute of Engineering Science and Technology, Shibpur</p>
+                            <p>July 2014 - June 2018 | GPA: 8.02/10</p>
+                        </div>
+
+                        <h3>Technical Skills</h3>
+                        <div class="skills-section">
+                            <div class="skill-category">
+                                <h5>Programming Languages</h5>
+                                <p>Python, C++, C, SQL</p>
+                            </div>
+                            <div class="skill-category">
+                                <h5>ML/DL Libraries</h5>
+                                <p>PyTorch, PyG, scikit-learn, TensorFlow, Keras, Transformers</p>
+                            </div>
+                            <div class="skill-category">
+                                <h5>Tools & Software</h5>
+                                <p>GitHub, VS Code, Conda, Poetry, Blender, MeshLab, Minitab, MATLAB Simulink</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 
-    <div class="wrapper">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <div class="profile-section">
-          <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
-          <h1>Jayadratha Gayen</h1>
-          <p class="title">AI Researcher</p>
-          <p class="affiliation">IIIT Hyderabad</p>
+    <!-- Admin Analytics Panel (Hidden by default) -->
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-header">
+            <h3>Website Analytics</h3>
+            <button id="close-admin" class="close-admin">×</button>
         </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="index.html" class="active">About</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="cv.html">CV</a></li>
-          </ul>
-        </nav>
-        <div class="contact-info">
-          <h3>Contact</h3>
-          <p><strong>Email:</strong><br><a href="mailto:jayadratha.gayen@research.iiit.ac.in">jayadratha.gayen@research.iiit.ac.in</a></p>
-          <div class="social-links">
-            <a class="social-link" target="_blank" href="https://linkedin.com/in/jayadratha-gayen">LinkedIn</a>
-            <a class="social-link" target="_blank" href="https://github.com/jayadratha-gayen">GitHub</a>
-            <a class="social-link" target="_blank" href="https://scholar.google.com">Google Scholar</a>
-          </div>
+        <div class="admin-content">
+            <div class="stat-card">
+                <h4>Total Visitors</h4>
+                <div id="visitor-count" class="stat-number">1,247</div>
+            </div>
+            <div class="stat-card">
+                <h4>Today's Visitors</h4>
+                <div id="today-visitors" class="stat-number">23</div>
+            </div>
+            <div class="stat-card">
+                <h4>Current Online</h4>
+                <div id="online-visitors" class="stat-number">3</div>
+            </div>
+            <div class="recent-visitors">
+                <h4>Recent Visitors</h4>
+                <div id="visitor-list" class="visitor-list"></div>
+            </div>
         </div>
-      </aside>
-
-      <!-- Main Content -->
-      <main class="main-content">
-        <section class="hero-section"><h2>Welcome</h2>
-        <p class="lead">I am a Research Fellow at the Machine Learning Lab, IIIT Hyderabad, focusing on <strong>Graph Neural Networks</strong>, <strong>temporal graphs</strong>, and <strong>uncertainty-aware AI</strong>.</p></section>
-
-        <section class="about-section"><h3>About Me</h3>
-        <p>My research encompasses reliable graph learning for high-stakes domains such as legal AI and healthcare. I have published at TMLR 2025, AAAI DAI 2025, ASONAM 2025, and KDD TGL 2025.</p>
-        <h4>Research Interests</h4>
-        <ul class="research-interests"><li>Graph Neural Networks</li><li>Temporal Graph Learning</li><li>Uncertainty Management</li><li>Explainable AI</li></ul>
-        </section>
-
-        <section class="highlights-section"><h3>Recent Highlights</h3>
-        <div class="highlight-cards">
-          <div class="highlight-card"><h4>ASONAM 2025</h4><p>"Reducing Misclassification Risk in Dynamic GNNs through Abstention" accepted.</p></div>
-          <div class="highlight-card"><h4>TMLR 2025</h4><p>"Node Classification With Reject Option" published.</p></div>
-          <div class="highlight-card"><h4>Google SoC 2025</h4><p>Temporal GNNs for C. elegans development (DevoTG).</p></div>
-        </div></section>
-      </main>
     </div>
 
-    <footer class="footer"><p>© 2025 Jayadratha Gayen</p></footer>
-
-    <!-- JS -->
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/analytics.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
