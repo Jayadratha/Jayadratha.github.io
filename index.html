@@ -16,101 +16,6 @@
         gtag('js', new Date());
         gtag('config', 'G-VJ7QVCW24B');
     </script>    
-    
-    <style>
-        /* Optimized image styles for better loading */
-        .publication-image, .project-image {
-            width: 180px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 6px;
-            background-color: #f5f5f5;
-        }
-        
-        .publication-item, .project-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: var(--card-bg, #f9f9f9);
-            border-radius: 8px;
-            transition: transform 0.2s ease;
-        }
-        
-        .publication-item:hover, .project-item:hover {
-            transform: translateY(-2px);
-        }
-        
-        .publication-visual, .project-visual {
-            flex-shrink: 0;
-        }
-        
-        .publication-content, .project-content {
-            flex: 1;
-        }
-        
-        .projects-list {
-            display: block;
-        }
-        
-        .projects-grid {
-            display: block;
-        }
-        
-        .project-card {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: var(--card-bg, #f9f9f9);
-            border-radius: 8px;
-            transition: transform 0.2s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-2px);
-        }
-        
-        .project-year {
-            background: var(--primary-color, #1a73e8);
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            display: inline-block;
-            margin-bottom: 0.5rem;
-        }
-        
-        .project-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 0.75rem 0;
-        }
-        
-        .feature-tag {
-            background: var(--tag-bg, #e3f2fd);
-            color: var(--tag-text, #1565c0);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-        
-        @media (max-width: 768px) {
-            .publication-item, .project-item, .project-card {
-                flex-direction: column;
-            }
-            
-            .publication-image, .project-image {
-                width: 100%;
-                height: 140px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation Header -->
@@ -575,43 +480,7 @@
         </main>
     </div>
 
-    <script>
-        // Minimal JavaScript to avoid loading issues
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const contentSections = document.querySelectorAll('.content-section');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    
-                    navLinks.forEach(nav => nav.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    contentSections.forEach(section => section.classList.remove('active'));
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        targetSection.classList.add('active');
-                    }
-                });
-            });
-            
-            // Theme switcher
-            const themeSwitcher = document.getElementById('theme-switcher');
-            if (themeSwitcher) {
-                themeSwitcher.addEventListener('click', function() {
-                    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-                    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-                    document.documentElement.setAttribute('data-theme', newTheme);
-                    localStorage.setItem('theme', newTheme);
-                });
-            }
-            
-            // Initialize theme
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        });
-    </script>
+    <!-- Load external JavaScript -->
+    <script src="app.js"></script>
 </body>
 </html>
