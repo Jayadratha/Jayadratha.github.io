@@ -6,66 +6,71 @@
     
     <!-- Homepage -->
     <url>
-        <loc>https://jayadratha.github.io/</loc>
+        <loc>https://jayadratha.com/</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
-    <!-- Main sections -->
+    <!-- About section -->
     <url>
-        <loc>https://jayadratha.github.io/#about</loc>
+        <loc>https://jayadratha.com/about</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
+    <!-- Publications section -->
     <url>
-        <loc>https://jayadratha.github.io/#publications</loc>
+        <loc>https://jayadratha.com/publications</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
+    <!-- Projects section -->
     <url>
-        <loc>https://jayadratha.github.io/#projects</loc>
+        <loc>https://jayadratha.com/projects</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
+    <!-- Experience section -->
     <url>
-        <loc>https://jayadratha.github.io/#experience</loc>
+        <loc>https://jayadratha.com/experience</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
+    <!-- Teaching section -->
     <url>
-        <loc>https://jayadratha.github.io/#teaching</loc>
+        <loc>https://jayadratha.com/teaching</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
+    <!-- CV section -->
     <url>
-        <loc>https://jayadratha.github.io/#cv</loc>
+        <loc>https://jayadratha.com/cv</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
-    <!-- Sitemap pages -->
+    <!-- Sitemap pages (for SEO but hidden from nav) -->
     <url>
-        <loc>https://jayadratha.github.io/sitemap.html</loc>
+        <loc>https://jayadratha.com/sitemap.html</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.3</priority>
     </url>
     
     <!-- CV PDF -->
     <url>
-        <loc>https://jayadratha.github.io/assets/Jayadratha_Gayen_CV.pdf</loc>
+        <loc>https://jayadratha.com/assets/Jayadratha_Gayen_CV.pdf</loc>
         <lastmod>2025-09-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
