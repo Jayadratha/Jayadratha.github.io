@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Jayadratha Gayen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .sitemap-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .sitemap-section {
+            margin-bottom: 2.5rem;
+            background: var(--card-bg, #f9f9f9);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .sitemap-section h3 {
+            color: var(--primary-color, #1a73e8);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color, #1a73e8);
+            padding-bottom: 0.5rem;
+        }
+        
+        .sitemap-links {
+            display: grid;
+            gap: 0.8rem;
+        }
+        
+        .sitemap-link {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
+            background: var(--bg-color, #fff);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--text-color, #333);
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .sitemap-link:hover {
+            background: var(--hover-bg, #e8f4ff);
+            border-left-color: var(--primary-color, #1a73e8);
+            transform: translateX(5px);
+        }
+        
+        .sitemap-link i {
+            margin-right: 1rem;
+            width: 20px;
+            color: var(--primary-color, #1a73e8);
+        }
+        
+        .sitemap-link-title {
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+        
+        .sitemap-link-desc {
+            color: var(--muted-text, #666);
+            font-size: 0.9rem;
+        }
+        
+        .back-home {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .back-home a {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: var(--primary-color, #1a73e8);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-home a:hover {
+            background: var(--primary-dark, #1557b0);
+            transform: translateY(-2px);
+        }
+        
+        /* Dark theme support */
+        [data-theme="dark"] .sitemap-section {
+            background: var(--card-bg, #2d2d2d);
+        }
+        
+        [data-theme="dark"] .sitemap-link {
+            background: var(--bg-color, #1e1e1e);
+            color: var(--text-color, #e0e0e0);
+        }
+        
+        [data-theme="dark"] .sitemap-link:hover {
+            background: var(--hover-bg, #333);
+        }
+        
+        [data-theme="dark"] .sitemap-link-desc {
+            color: var(--muted-text, #999);
+        }
+    </style>
+</head>
+<body>
+    <div class="sitemap-container">
+        <div class="sitemap-header">
+            <h1>Website Sitemap</h1>
+            <p>Complete navigation guide to all pages and sections of Jayadratha Gayen's academic website</p>
+        </div>
+        
+        <!-- Main Website Sections -->
+        <div class="sitemap-section">
+            <h3><i class="fas fa-home"></i> Main Website Sections</h3>
+            <div class="sitemap-links">
+                <a href="index.html#about" class="sitemap-link">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <div class="sitemap-link-title">About</div>
+                        <div class="sitemap-link-desc">Personal introduction, research interests, and recent news</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#publications" class="sitemap-link">
+                    <i class="fas fa-file-alt"></i>
+                    <div>
+                        <div class="sitemap-link-title">Publications</div>
+                        <div class="sitemap-link-desc">Academic papers, conference proceedings, and research articles</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#projects" class="sitemap-link">
+                    <i class="fas fa-project-diagram"></i>
+                    <div>
+                        <div class="sitemap-link-title">Projects</div>
+                        <div class="sitemap-link-desc">Research projects including DevoTG, Nyay Saheli, and Graph Neural Networks</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#experience" class="sitemap-link">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <div class="sitemap-link-title">Experience</div>
+                        <div class="sitemap-link-desc">Professional experience, research positions, and work history</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#teaching" class="sitemap-link">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div>
+                        <div class="sitemap-link-title">Teaching</div>
+                        <div class="sitemap-link-desc">Teaching experience, workshops, and academic instruction</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#cv" class="sitemap-link">
+                    <i class="fas fa-file-pdf"></i>
+                    <div>
+                        <div class="sitemap-link-title">Curriculum Vitae</div>
+                        <div class="sitemap-link-desc">Complete academic CV, education, and technical skills</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Research Areas -->
+        <div class="sitemap-section">
+            <h3><i class="fas fa-flask"></i> Research Areas</h3>
+            <div class="sitemap-links">
+                <a href="index.html#about" class="sitemap-link">
+                    <i class="fas fa-network-wired"></i>
+                    <div>
+                        <div class="sitemap-link-title">Graph Neural Networks</div>
+                        <div class="sitemap-link-desc">Dynamic graphs, temporal networks, and graph representation learning</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#about" class="sitemap-link">
+                    <i class="fas fa-brain"></i>
+                    <div>
+                        <div class="sitemap-link-title">Uncertainty Quantification</div>
+                        <div class="sitemap-link-desc">Reject option classification and uncertainty optimization</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#about" class="sitemap-link">
+                    <i class="fas fa-dna"></i>
+                    <div>
+                        <div class="sitemap-link-title">Computational Biology</div>
+                        <div class="sitemap-link-desc">C. elegans development modeling and molecular property prediction</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#about" class="sitemap-link">
+                    <i class="fas fa-balance-scale"></i>
+                    <div>
+                        <div class="sitemap-link-title">Legal AI</div>
+                        <div class="sitemap-link-desc">Legal judgment prediction and high-stakes decision making</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Key Projects -->
+        <div class="sitemap-section">
+            <h3><i class="fas fa-star"></i> Featured Projects</h3>
+            <div class="sitemap-links">
+                <a href="https://github.com/Jayadratha/DevoTG_GSoC" class="sitemap-link" target="_blank">
+                    <i class="fas fa-microscope"></i>
+                    <div>
+                        <div class="sitemap-link-title">DevoTG: Developmental Temporal Graph Networks</div>
+                        <div class="sitemap-link-desc">Google Summer of Code 2025 - C. elegans development analysis using GNNs</div>
+                    </div>
+                </a>
+                
+                <a href="index.html#projects" class="sitemap-link">
+                    <i class="fas fa-heart"></i>
+                    <div>
+                        <div class="sitemap-link-title">Nyay Saheli</div>
+                        <div class="sitemap-link-desc">Conversational RAG system for empathetic responses to Indian women</div>
+                    </div>
+                </a>
+                
+                <a href="https://arxiv.org/abs/2501.08397" class="sitemap-link" target="_blank">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <div class="sitemap-link-title">Dynamic GNN with Abstention</div>
+                        <div class="sitemap-link-desc">Reducing misclassification risk in dynamic graph neural networks</div>
+                    </div>
+                </a>
+                
+                <a href="https://youtu.be/DZX6Xe6up-0" class="sitemap-link" target="_blank">
+                    <i class="fas fa-cube"></i>
+                    <div>
+                        <div class="sitemap-link-title">3D Motion Transfer</div>
+                        <div class="sitemap-link-desc">Cross-topology motion transfer using Graph Convolution Networks</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- External Links -->
+        <div class="sitemap-section">
+            <h3><i class="fas fa-external-link-alt"></i> External Profiles & Resources</h3>
+            <div class="sitemap-links">
+                <a href="https://scholar.google.com/citations?user=rFhUQYUAAAAJ" class="sitemap-link" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <div class="sitemap-link-title">Google Scholar</div>
+                        <div class="sitemap-link-desc">Complete list of academic publications and citations</div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/Jayadratha" class="sitemap-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <div class="sitemap-link-title">GitHub Profile</div>
+                        <div class="sitemap-link-desc">Source code, research repositories, and open-source contributions</div>
+                    </div>
+                </a>
+                
+                <a href="https://linkedin.com/in/jayagn" class="sitemap-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <div class="sitemap-link-title">LinkedIn</div>
+                        <div class="sitemap-link-desc">Professional network and career updates</div>
+                    </div>
+                </a>
+                
+                <a href="https://openreview.net/profile?id=~Jayadratha_Gayen1" class="sitemap-link" target="_blank">
+                    <i class="fas fa-file-alt"></i>
+                    <div>
+                        <div class="sitemap-link-title">OpenReview</div>
+                        <div class="sitemap-link-desc">Peer review activities and academic discussions</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Resources -->
+        <div class="sitemap-section">
+            <h3><i class="fas fa-download"></i> Downloadable Resources</h3>
+            <div class="sitemap-links">
+                <a href="assets/Jayadratha_Gayen_CV.pdf" class="sitemap-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                    <div>
+                        <div class="sitemap-link-title">Download CV (PDF)</div>
+                        <div class="sitemap-link-desc">Complete curriculum vitae with detailed academic and professional history</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Website Information -->
+        <div class="sitemap-section">
+            <h3><i class="fas fa-info-circle"></i> Website Information</h3>
+            <div class="sitemap-links">
+                <a href="sitemap.html" class="sitemap-link">
+                    <i class="fas fa-sitemap"></i>
+                    <div>
+                        <div class="sitemap-link-title">This Sitemap</div>
+                        <div class="sitemap-link-desc">Complete navigation guide to all website sections and pages</div>
+                    </div>
+                </a>
+                
+                <a href="mailto:jayadratha.gayen@research.iiit.ac.in" class="sitemap-link">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <div class="sitemap-link-title">Contact</div>
+                        <div class="sitemap-link-desc">Email for collaboration, research inquiries, and academic discussions</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="back-home">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                Back to Homepage
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // Theme switching support
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>
