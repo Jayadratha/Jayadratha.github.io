@@ -17,6 +17,43 @@
 
         gtag('config', 'G-VJ7QVCW24B');
     </script>    
+    
+    <style>
+        /* Optimized image styles for better loading */
+        .publication-image, .project-image {
+            width: 180px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 6px;
+            background-color: #f5f5f5;
+        }
+        
+        .publication-item, .project-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .publication-visual, .project-visual {
+            flex-shrink: 0;
+        }
+        
+        .publication-content, .project-content {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .publication-item, .project-card {
+                flex-direction: column;
+            }
+            
+            .publication-image, .project-image {
+                width: 100%;
+                height: 140px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Header -->
@@ -40,7 +77,6 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#teaching" class="nav-link">Teaching</a></li>
                 <li><a href="#cv" class="nav-link">CV</a></li>
-                <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
             </ul>
         </div>
     </nav>
@@ -53,8 +89,8 @@
                     <img src="assets/Jay_profile.JPG" alt="Jayadratha Gayen" class="profile-img">
                 </div>
                 <h3>Jayadratha Gayen</h3>
-                <p class="title">Research Fellow</p>
-                <p class="institution">Machine Learning Lab<br>IIIT Hyderabad</p>
+                <p class="title">AI Researcher</p>
+                <p class="institution">MS Graduate<br>IIIT Hyderabad</p>
             </div>
 
             <div class="contact-section">
@@ -102,27 +138,25 @@
                 
                 <div class="intro-content">
                     <p>
-                        I am currently a <strong>Google Summer of Code</strong> contributor with 
-                        <a href="https://www.incf.org/" style="color: #1a73e8; text-decoration: none;" target="_blank">INCF</a>, 
-                        working on a project involving dynamic graph neural networks for modeling 
-                        <em>C. elegans</em> development.
-                    </p>
-                
-                    <p>
-                        Previously, I was a research fellow at the 
-                        <a href="https://mll.iiit.ac.in/" style="color: #1a73e8; text-decoration: none;" target="_blank">Machine Learning Lab</a> at 
-                        <a href="https://www.iiit.ac.in/" style="color: #1a73e8; text-decoration: none;" target="_blank">IIIT Hyderabad</a>, 
-                        where I conducted research in artificial intelligence and machine learning. 
-                        My work focused on <strong>Graph Neural Networks (GNNs)</strong>, particularly in the areas of dynamic graphs, 
-                        uncertainty quantification, and high-stakes decision-making, under the guidance of 
-                        <a href="https://charusharma.org/" style="color: #1a73e8; text-decoration: none;" target="_blank">Prof. Charu Sharma</a> and 
-                        <a href="https://sites.google.com/site/nareshmanwani/home" style="color: #1a73e8; text-decoration: none;" target="_blank">Prof. Naresh Manwani</a>.
-                    </p>
-                
-                    <p>
                         I recently completed my <strong>M.Sc. by Research in Electronics and Communication Engineering</strong> at 
                         <a href="https://www.iiit.ac.in/" style="color: #1a73e8; text-decoration: none;" target="_blank">IIIT Hyderabad</a>, 
-                        where I explored novel approaches to temporal graph learning, reject option classification, and 3D computer vision applications.
+                        where I conducted research on <strong>Graph Neural Networks (GNNs)</strong>, particularly in the areas of dynamic graphs, 
+                        uncertainty quantification, and high-stakes decision-making, under the guidance of 
+                        <a href="https://charusharma.org/" style="color: #1a73e8; text-decoration: none;" target="_blank">Prof. Charu Sharma</a> and 
+                        <a href="https://sites.google.com/site/nareshmanwani/home" style="color: #1a73e8; text-decoration: none;" target="_blank">Prof. Naresh Manwani</a> 
+                        at the <a href="https://mll.iiit.ac.in/" style="color: #1a73e8; text-decoration: none;" target="_blank">Machine Learning Lab</a>.
+                    </p>
+                
+                    <p>
+                        I recently completed a <strong>Google Summer of Code</strong> project with 
+                        <a href="https://www.incf.org/" style="color: #1a73e8; text-decoration: none;" target="_blank">INCF</a>, 
+                        developing dynamic graph neural networks for modeling <em>C. elegans</em> development.
+                    </p>
+                
+                    <p>
+                        I completed my <strong>Bachelor of Technology in Electrical Engineering</strong> from 
+                        <a href="https://www.iiests.ac.in/" style="color: #1a73e8; text-decoration: none;" target="_blank">Indian Institute of Engineering Science and Technology, Shibpur</a>. 
+                        Following my graduation, I briefly worked as an Engineer at Vikram Solar Limited, contributing to production optimization projects.
                     </p>
                 </div>
                 
@@ -145,6 +179,10 @@
 
                 <div class="news-section">
                     <h3>Recent News</h3>
+                    <div class="news-item">
+                        <span class="news-date">September 2025</span>
+                        <span class="news-content">🎆 Successfully completed Google Summer of Code project on DevoTG: Developmental Temporal Graph Networks! 🧬</span>
+                    </div>
                     <div class="news-item">
                         <span class="news-date">July 2025</span>
                         <span class="news-content">🎓 Graduated with an MS by Research from IIIT Hyderabad! 🌟</span>
@@ -179,7 +217,7 @@
                         <h3>2025</h3>
                         <div class="publication-item">
                             <div class="publication-visual">
-                                <img src="https://via.placeholder.com/200x120/4CAF50/ffffff?text=Dynamic+GNN" alt="Dynamic Graph Neural Networks visualization" class="publication-image">
+                                <img src="assets/dynamic_gnn.png" alt="Dynamic Graph Neural Networks visualization" class="publication-image" onerror="this.src='https://via.placeholder.com/180x100/4CAF50/ffffff?text=Dynamic+GNN'">
                             </div>
                             <div class="publication-content">
                                 <h4>Reducing Misclassification Risk in Dynamic Graph Neural Networks through Abstention</h4>
@@ -194,7 +232,7 @@
 
                         <div class="publication-item">
                             <div class="publication-visual">
-                                <img src="https://via.placeholder.com/200x120/2196F3/ffffff?text=Temporal+GNN" alt="Temporal Graph Networks visualization" class="publication-image">
+                                <img src="assets/temporal_gnn.png" alt="Temporal Graph Networks visualization" class="publication-image" onerror="this.src='https://via.placeholder.com/180x100/2196F3/ffffff?text=Temporal+GNN'">
                             </div>
                             <div class="publication-content">
                                 <h4>Confidence First: Reliability-Driven Temporal Graph Neural Networks</h4>
@@ -210,7 +248,7 @@
 
                         <div class="publication-item">
                             <div class="publication-visual">
-                                <img src="https://via.placeholder.com/200x120/FF9800/ffffff?text=Node+Classification" alt="Node Classification with Reject Option" class="publication-image">
+                                <img src="assets/node_classification.png" alt="Node Classification with Reject Option" class="publication-image" onerror="this.src='https://via.placeholder.com/180x100/FF9800/ffffff?text=Node+Classification'">
                             </div>
                             <div class="publication-content">
                                 <h4>Node Classification With Reject Option</h4>
@@ -225,7 +263,7 @@
                         <h3>2024</h3>
                         <div class="publication-item">
                             <div class="publication-visual">
-                                <img src="https://via.placeholder.com/200x120/9C27B0/ffffff?text=Legal+AI" alt="Legal Judgment Prediction visualization" class="publication-image">
+                                <img src="assets/legal_ai.png" alt="Legal Judgment Prediction visualization" class="publication-image" onerror="this.src='https://via.placeholder.com/180x100/9C27B0/ffffff?text=Legal+AI'">
                             </div>
                             <div class="publication-content">
                                 <h4>Node Classification With Integrated Reject Option For Legal Judgement Prediction</h4>
@@ -250,94 +288,106 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-visual">
-                            <img src="https://raw.githubusercontent.com/Jayadratha/DevoTG_GSoC/main/outputs/connectome_analysis/network_growth_over_development.png" alt="DevoTG C. elegans development visualization" class="project-image" onerror="this.src='https://via.placeholder.com/300x180/4CAF50/ffffff?text=DevoTG+GSoC'">
+                            <img src="assets/devotg_project.png" alt="DevoTG C. elegans development visualization" class="project-image" onerror="this.src='https://via.placeholder.com/180x100/4CAF50/ffffff?text=DevoTG+GSoC'">
                         </div>
-                        <div class="project-year">2025</div>
-                        <h4>DevoTG: Developmental Temporal Graph Networks</h4>
-                        <p>Google Summer of Code project developing comprehensive framework for analyzing C. elegans cell division patterns and connectome development using temporal graph neural networks. Combines advanced visualization techniques with state-of-the-art graph neural networks for developmental biology insights.</p>
-                        <div class="project-features">
-                            <span class="feature-tag">Temporal Graph Networks</span>
-                            <span class="feature-tag">Interactive Visualization</span>
-                            <span class="feature-tag">Developmental Biology</span>
-                            <span class="feature-tag">C. elegans</span>
+                        <div class="project-content">
+                            <div class="project-year">2025</div>
+                            <h4>DevoTG: Developmental Temporal Graph Networks</h4>
+                            <p>Google Summer of Code project developing comprehensive framework for analyzing C. elegans cell division patterns and connectome development using temporal graph neural networks. Combines advanced visualization techniques with state-of-the-art graph neural networks for developmental biology insights.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Temporal Graph Networks</span>
+                                <span class="feature-tag">Interactive Visualization</span>
+                                <span class="feature-tag">Developmental Biology</span>
+                                <span class="feature-tag">C. elegans</span>
+                            </div>
+                            <a href="https://github.com/DevoLearn/DevoGraph/tree/main/DevoTG" class="project-link" target="_blank">Learn More</a>
                         </div>
-                        <a href="https://github.com/Jayadratha/DevoTG_GSoC" class="project-link" target="_blank">Learn More</a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-visual">
-                            <img src="https://via.placeholder.com/300x180/E91E63/ffffff?text=Nyay+Saheli" alt="Nyay Saheli conversational AI" class="project-image">
+                            <img src="assets/nyay_saheli.png" alt="Nyay Saheli conversational AI" class="project-image" onerror="this.src='https://via.placeholder.com/180x100/E91E63/ffffff?text=Nyay+Saheli'">
                         </div>
-                        <div class="project-year">2025</div>
-                        <h4>Nyay Saheli: Conversational RAG for Indian Women</h4>
-                        <p>A conversational AI assistant designed to provide empathetic responses and legal guidance to Indian women in multiple Indian languages. Built using Retrieval-Augmented Generation (RAG) techniques to deliver culturally sensitive and legally accurate information for women's rights and safety.</p>
-                        <div class="project-features">
-                            <span class="feature-tag">RAG</span>
-                            <span class="feature-tag">Multilingual NLP</span>
-                            <span class="feature-tag">Legal AI</span>
-                            <span class="feature-tag">Women Empowerment</span>
+                        <div class="project-content">
+                            <div class="project-year">2025</div>
+                            <h4>Nyay Saheli: Conversational RAG for Indian Women</h4>
+                            <p>A conversational AI assistant designed to provide empathetic responses and legal guidance to Indian women in multiple Indian languages. Built using Retrieval-Augmented Generation (RAG) techniques to deliver culturally sensitive and legally accurate information for women's rights and safety.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">RAG</span>
+                                <span class="feature-tag">Multilingual NLP</span>
+                                <span class="feature-tag">Legal AI</span>
+                                <span class="feature-tag">Women Empowerment</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More</a>
                         </div>
-                        <a href="#" class="project-link">Learn More</a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-visual">
-                            <img src="https://via.placeholder.com/300x180/FF9800/ffffff?text=NodeCwR" alt="Node Classification with Reject Option" class="project-image">
+                            <img src="assets/nodecwr.png" alt="Node Classification with Reject Option" class="project-image" onerror="this.src='https://via.placeholder.com/180x100/FF9800/ffffff?text=NodeCwR'">
                         </div>
-                        <div class="project-year">2024</div>
-                        <h4>Node Classification With Integrated Reject Option</h4>
-                        <p>Introduced NodeCwR framework incorporating cost-based and coverage-based rejection strategies. Achieved 6-19% improvement in prediction accuracy on ILDC dataset for Legal Judgment Prediction.</p>
-                        <div class="project-features">
-                            <span class="feature-tag">Graph Neural Networks</span>
-                            <span class="feature-tag">Reject Option</span>
-                            <span class="feature-tag">Legal AI</span>
+                        <div class="project-content">
+                            <div class="project-year">2024</div>
+                            <h4>Node Classification With Integrated Reject Option</h4>
+                            <p>Introduced NodeCwR framework incorporating cost-based and coverage-based rejection strategies. Achieved 6-19% improvement in prediction accuracy on ILDC dataset for Legal Judgment Prediction.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Graph Neural Networks</span>
+                                <span class="feature-tag">Reject Option</span>
+                                <span class="feature-tag">Legal AI</span>
+                            </div>
+                            <a href="https://arxiv.org/abs/2412.03190" class="project-link" target="_blank">Learn More</a>
                         </div>
-                        <a href="https://arxiv.org/abs/2412.03190" class="project-link" target="_blank">Learn More</a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-visual">
-                            <img src="https://via.placeholder.com/300x180/2196F3/ffffff?text=Dynamic+GNN" alt="Dynamic Graph Learning with Abstention" class="project-image">
+                            <img src="assets/dynamic_graph_abstention.png" alt="Dynamic Graph Learning with Abstention" class="project-image" onerror="this.src='https://via.placeholder.com/180x100/2196F3/ffffff?text=Dynamic+GNN'">
                         </div>
-                        <div class="project-year">2024</div>
-                        <h4>Predict Confidently, Predict Right: Abstention in Dynamic Graph Learning</h4>
-                        <p>Developed novel reject option strategy for CTDGs, allowing model abstention from uncertain predictions. Achieved 10-15% improvement in AUC/AP scores across six dynamic graph datasets.</p>
-                        <div class="project-features">
-                            <span class="feature-tag">Dynamic Graphs</span>
-                            <span class="feature-tag">Uncertainty Quantification</span>
-                            <span class="feature-tag">Deep Learning</span>
+                        <div class="project-content">
+                            <div class="project-year">2024</div>
+                            <h4>Predict Confidently, Predict Right: Abstention in Dynamic Graph Learning</h4>
+                            <p>Developed novel reject option strategy for CTDGs, allowing model abstention from uncertain predictions. Achieved 10-15% improvement in AUC/AP scores across six dynamic graph datasets.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Dynamic Graphs</span>
+                                <span class="feature-tag">Uncertainty Quantification</span>
+                                <span class="feature-tag">Deep Learning</span>
+                            </div>
+                            <a href="https://arxiv.org/abs/2501.08397" class="project-link" target="_blank">Learn More</a>
                         </div>
-                        <a href="https://arxiv.org/abs/2501.08397" class="project-link" target="_blank">Learn More</a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-visual">
-                            <img src="https://via.placeholder.com/300x180/9C27B0/ffffff?text=3D+Motion" alt="3D Motion Transfer" class="project-image">
+                            <img src="assets/3d_motion_transfer.png" alt="3D Motion Transfer" class="project-image" onerror="this.src='https://via.placeholder.com/180x100/9C27B0/ffffff?text=3D+Motion'">
                         </div>
-                        <div class="project-year">2023</div>
-                        <h4>3D Motion Transfer Across Diverse Character Topologies</h4>
-                        <p>Developed method using Graph Convolution Networks for realistic 3D motion transfer between diverse character topologies. Incorporated prior frame encodings to reduce jitter.</p>
-                        <div class="project-features">
-                            <span class="feature-tag">3D Computer Vision</span>
-                            <span class="feature-tag">Graph Convolution</span>
-                            <span class="feature-tag">Motion Transfer</span>
+                        <div class="project-content">
+                            <div class="project-year">2023</div>
+                            <h4>3D Motion Transfer Across Diverse Character Topologies</h4>
+                            <p>Developed method using Graph Convolution Networks for realistic 3D motion transfer between diverse character topologies. Incorporated prior frame encodings to reduce jitter.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">3D Computer Vision</span>
+                                <span class="feature-tag">Graph Convolution</span>
+                                <span class="feature-tag">Motion Transfer</span>
+                            </div>
+                            <a href="https://youtu.be/DZX6Xe6up-0" class="project-link" target="_blank">Learn More</a>
                         </div>
-                        <a href="https://youtu.be/DZX6Xe6up-0" class="project-link" target="_blank">Learn More</a>
                     </div>
 
                     <div class="project-card">
                         <div class="project-visual">
-                            <img src="https://via.placeholder.com/300x180/FF5722/ffffff?text=Multilingual+NLP" alt="Multilingual News Similarity" class="project-image">
+                            <img src="assets/multilingual_nlp.png" alt="Multilingual News Similarity" class="project-image" onerror="this.src='https://via.placeholder.com/180x100/FF5722/ffffff?text=Multilingual+NLP'">
                         </div>
-                        <div class="project-year">2022</div>
-                        <h4>Multilingual News Article Similarity Detection Using Siamese Networks</h4>
-                        <p>Developed multilingual news similarity detection system. Achieved best result with multilingual DistilBERT (PCC: 0.5683) in SemEval 2022 Task 8.</p>
-                        <div class="project-features">
-                            <span class="feature-tag">Multilingual NLP</span>
-                            <span class="feature-tag">Siamese Networks</span>
-                            <span class="feature-tag">Text Similarity</span>
+                        <div class="project-content">
+                            <div class="project-year">2022</div>
+                            <h4>Multilingual News Article Similarity Detection Using Siamese Networks</h4>
+                            <p>Developed multilingual news similarity detection system. Achieved best result with multilingual DistilBERT (PCC: 0.5683) in SemEval 2022 Task 8.</p>
+                            <div class="project-features">
+                                <span class="feature-tag">Multilingual NLP</span>
+                                <span class="feature-tag">Siamese Networks</span>
+                                <span class="feature-tag">Text Similarity</span>
+                            </div>
+                            <a href="#" class="project-link">Learn More</a>
                         </div>
-                        <a href="#" class="project-link">Learn More</a>
                     </div>
                 </div>
             </section>
@@ -350,11 +400,11 @@
                 
                 <div class="experience-timeline">
                     <div class="experience-item">
-                        <div class="experience-date">May 2025 - Present</div>
+                        <div class="experience-date">May 2025 - September 2025</div>
                         <div class="experience-content">
                             <h4>Software Developer</h4>
                             <p class="organization">Google Summer of Code, Remote</p>
-                            <p>Project: DevoTG: Dynamic Graph Neural Networks for Modeling C. elegans Development. Model C. elegans embryogenesis and connectome formation using advanced temporal graph methods.</p>
+                            <p>Project: DevoTG: Dynamic Graph Neural Networks for Modeling C. elegans Development. Modeled C. elegans embryogenesis and connectome formation using advanced temporal graph methods. Successfully completed all project deliverables including comprehensive framework for developmental biology analysis.</p>
                         </div>
                     </div>
 
