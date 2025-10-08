@@ -318,6 +318,28 @@ pre code {
   box-shadow: var(--focus-ring);
 }
 
+
+/* 1. Define the default style for the professional button */
+.btn--professional {
+  /* Use a color that fits your theme. This is a nice blue-grey. */
+  background-color: #607d8b; 
+  color: #ffffff; /* White text */
+  border: 1px solid #607d8b; /* Matching border */
+}
+
+/* 2. Define a better hover effect for BOTH buttons */
+.btn--primary:hover,
+.btn--professional:hover {
+  /* On hover, make the background slightly darker */
+  filter: brightness(90%); 
+}
+
+/* 3. (Optional but Recommended) Add a smooth transition to the base button class */
+.btn {
+  /* This makes the color change on hover smooth */
+  transition: filter 0.3s ease;
+}
+
 .btn--primary {
   background: var(--color-primary);
   color: var(--color-btn-primary-text);
@@ -1216,8 +1238,17 @@ select.form-control {
   color: var(--color-text);
 }
 
-.cv-download {
+/* .cv-download {
   margin-bottom: var(--space-32);
+} */
+
+/* New container for side-by-side CV buttons */
+.cv-download-container {
+  display: flex; /* Aligns children (the buttons) in a row */
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: var(--space-16); /* Adds space between the buttons */
+  flex-wrap: wrap; /* Allows buttons to stack on small screens */
+  margin-bottom: var(--space-32); /* Keeps the original space below the buttons */
 }
 
 .cv-btn {
