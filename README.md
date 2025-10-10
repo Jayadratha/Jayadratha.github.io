@@ -1,7 +1,7 @@
 # Jayadratha Gayen – Portfolio Website
 
 This repository contains the full source code for my professional academic website.
-Last updated on 29-07-2025.
+Last updated on 11-10-2025.
 
 
 ## 🗂 Structure
