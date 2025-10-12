@@ -902,6 +902,7 @@ select.form-control {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-8);
+  justify-content: space-between;
 }
 
 .interest-tag {
@@ -945,6 +946,7 @@ select.form-control {
   font-size: var(--font-size-sm);
   line-height: 1.5;
   color: var(--color-text);
+  text-align: justify;
 }
 
 /* Publications Section */
@@ -1122,6 +1124,7 @@ select.form-control {
   color: var(--color-text);
   line-height: 1.5;
   margin-bottom: var(--space-16);
+  text-align: justify;
 }
 
 .project-link {
@@ -1176,6 +1179,7 @@ select.form-control {
 .experience-content p {
   color: var(--color-text);
   line-height: 1.5;
+  text-align: justify;
 }
 
 .experience-content p:last-child {
@@ -1223,6 +1227,7 @@ select.form-control {
 .teaching-content p {
   color: var(--color-text);
   line-height: 1.5;
+  text-align: justify;
 }
 
 .teaching-content p:last-child {
@@ -1238,11 +1243,9 @@ select.form-control {
   font-size: var(--font-size-lg);
   margin-bottom: var(--space-24);
   color: var(--color-text);
+  text-align: justify;
 }
 
-/* .cv-download {
-  margin-bottom: var(--space-32);
-} */
 
 /* New container for side-by-side CV buttons */
 .cv-download-container {
@@ -1287,6 +1290,7 @@ select.form-control {
 .education-item p {
   margin-bottom: var(--space-4);
   color: var(--color-text-secondary);
+  text-align: justify;
 }
 
 .education-item p:last-child {
@@ -1317,6 +1321,7 @@ select.form-control {
   margin: 0;
   color: var(--color-text-secondary);
   line-height: 1.4;
+  text-align: justify;
 }
 
 /* Theme Switcher Button */
